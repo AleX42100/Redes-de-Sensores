@@ -1,17 +1,17 @@
 
 
-Proyecto Redes de Sensores Electrónicos
+###Proyecto Redes de Sensores Electrónicos
 
 
 
-Introducción:
+#Introducción:
 
 
 Este proyecto forma parte de la asignatura de redes de sensores electrónicos. Partiendo de una placa TTGO, incrustando entre otros un ESP32 y una pantalla OLED. También tenemos a nuestra disposición una unidad de medición inercial, modelo MPU9250, con un giroscopio, un acelerómetro y un magnetómetro, cada uno en 3 ejes. El objetivo inicial de este proyecto era poder identificar la actividad física realizada, entre la posición estática, caminar, correr y montar en bicicleta. Al final, no se incluyó el ciclismo. 
 Además, podría haber sido interesante integrar el aprendizaje automático, pero tras el análisis mediante Excel, es relativamente sencillo identificar las actividades físicas únicamente mediante un umbral.
 
 
-Extracción:
+#Extracción:
 
 
 Este código incluye todas las bibliotecas necesarias para el proyecto. Empezamos declarando todos los parámetros que se utilizarán, luego inicializamos las funcionalidades que se utilizarán (WiFi, sensor, puerto serie, configuración de los registros del sensor, la hora, el servidor FTP). 
@@ -19,18 +19,9 @@ Luego, en el loop(), declaramos un objeto que permitirá construir el documento 
 A continuación, el resultado se muestra en la pantalla OLED. El sensor se coloca mediante una banda elástica (para evitar movimientos no deseados) justo por encima de la rodilla.
 
 
-Analysis:
+#Analysis:
 
-El tratamiento de los datos se realiza a través de Excel, se recuperan una serie de muestras de mí quieto, caminando o corriendo. Trazamos las curvas y observamos lo siguiente:
-
-
-
- 
- 
- 
-(grafías obtenidas con una decena de los registros de cada actividad)
-
-
+El tratamiento de los datos se realiza a través de Excel, se recuperan una serie de muestras de mí quieto, caminando o corriendo. Los resultados se muestran en el archivo Readme_Proyecto.docx
 
 
 Aunque la idea inicial era poder aplicar el aprendizaje automático para determinar la actividad, se puede ver que es relativamente sencillo hacerlo estableciendo umbrales medios: 
@@ -41,7 +32,7 @@ Aunque la idea inicial era poder aplicar el aprendizaje automático para determi
 
 
 
-Diagrama de funciones del codigo:
+Diagrama de funciones del codigo, en el archivo Readme_Proyecto.docx
 
 
  
